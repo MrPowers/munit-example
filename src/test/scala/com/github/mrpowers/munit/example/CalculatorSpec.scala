@@ -6,18 +6,8 @@ class CalculatorSpec extends munit.FunSuite {
     assertEquals(Calculator.addNumbers(3, 4), 7)
   }
 
-  test("equality error message") {
-    val obtained = 42
-    val expected = 43
-    assertEquals(obtained, expected)
-  }
-
   test("considers collections with the same elements equal") {
     assertEquals(Seq(1, 2), Seq(1, 2))
-  }
-
-  test("gives good error messages for different collections") {
-    assertEquals(Seq(1, 2), Seq(1, 8))
   }
 
   test("can intercept exceptions") {
