@@ -12,6 +12,4 @@ class FailingSpec extends munit.FunSuite {
     assertEquals(Seq(1, 2), Seq(1, 8))
   }
 
-
-
 }
