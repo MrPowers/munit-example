@@ -14,6 +14,7 @@ class MySuite extends FunSuite {
         Properties.isWin &&
           Properties.versionNumberString.startsWith("2.13")
         )
+    println("***** " + isIgnored + " *****")
     if (isIgnored) test.tag(Ignore)
     else test
   }
